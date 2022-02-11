@@ -1,15 +1,17 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import Header from './Header';
-import Sidebar from './Sidebar';
-import Feed from './Feed';
-import Login from './Login';
 import { useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/userSlice';
 import { auth } from './firebase';
 import { useDispatch } from 'react-redux';
-import Widgets from './Widgets';
+// import LandingPage from './LandingPage';
+// import Home from './Home';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Login from './Login';
+import Feed from './Feed';
+import Widgets from './Widgets';
+import Sidebar from './Sidebar';
 
 function App() {
 
@@ -36,14 +38,13 @@ function App() {
   return (
     <div className="app">
       <Header/>
-
       { !user ? (
         <Login />
       ) : (
         <div className='app__body'>
-          <Sidebar />
-          <Feed />
-          <Widgets />
+          <Sidebar/>
+          <Feed/>
+          <Widgets/>
         </div>
       )}
     </div>
@@ -52,13 +53,18 @@ function App() {
     //   <div className='app'>
     //     <Switch>
     //       <Route path='/'>
-    //         <Login />
+    //         <LandingPage />
     //       </Route>
-    //       <Route path='home'>
-    //         <Header/>
-    //         <Feed/>
-    //         <Sidebar/>
-    //       </Route>
+    //       <div className="app__body">
+    //         <Route path='login'>
+    //           <Header />
+    //           <Login />
+    //         </Route>
+    //         <Route path='home' className="app__body">
+    //           <Header/>
+    //           <Home/>
+    //         </Route>
+    //       </div>
     //     </Switch>
     //   </div>
     // </Router>
