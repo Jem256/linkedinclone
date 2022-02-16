@@ -8,6 +8,12 @@
     height: fit-content;
     padding-bottom: 10px;
 }
+@media (max-width: 768px) {
+    .widgets {
+        top: 0px;
+        position: relative;
+    }
+}
 
 .widgets__header {
     display: flex;

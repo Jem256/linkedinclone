@@ -42,7 +42,7 @@ function App() {
         <Login />
       ) : (
         <div className='app__body'>
-          <Sidebar/>
+          <Sidebar className='app_sideBar'/>
           <Feed/>
           <Widgets/>
         </div>

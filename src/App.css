@@ -7,9 +7,20 @@
 }
 
 .app__body {
-    display: flex;
-    margin-top: 35px;
-    max-width: 1200px;
-    margin-left: 20px;
-    margin-right: 20px;
+    display: grid;
+    grid-template-areas: "sidebar feed widgets";
+    grid-template-columns: minmax(0, 5fr) minmax(0, 12fr) minmax(300px, 7fr);
+    column-gap: 25px;
+    row-gap: 40px;
+    grid-template-rows: auto;
+    margin: 25px 0;
+}
+
+@media (max-width: 768px) {
+    .app__body {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;  
+        margin-bottom: 80px;  
+    }
 }

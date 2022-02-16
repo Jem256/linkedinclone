@@ -37,6 +37,25 @@
     background: none;
 }
 
+.nav {
+    margin-left: auto;
+    display: block;
+}
+@media (max-width: 768px) {
+    .nav{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background: white;
+        width: 100%;
+    }
+
+    .header__search > input {
+        width: 250px;
+    }
+}
+
 .header__right {
     display: flex;
+
 }

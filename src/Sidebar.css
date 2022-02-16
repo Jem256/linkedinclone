@@ -6,6 +6,12 @@
     text-align: center;
     height: fit-content;
 }
+@media (max-width:768px) {
+    .sidebar {
+        top: 10px;
+        position: relative;
+    }
+}
 
 .sidebar__avatar {
     margin-bottom: 10px;
