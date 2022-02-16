@@ -7,7 +7,7 @@
     color: grey;
     cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 320px) {
     .headerOption{
         min-width: 60px;
     }

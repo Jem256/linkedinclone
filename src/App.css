@@ -16,7 +16,7 @@
     margin: 25px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
     .app__body {
         display: flex;
         flex-direction: column;

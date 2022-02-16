@@ -41,7 +41,7 @@
     margin-left: auto;
     display: block;
 }
-@media (max-width: 768px) {
+@media (max-width: 320px) {
     .nav{
         position: fixed;
         left: 0;

@@ -2,7 +2,7 @@
     flex: 0.6;
     margin: 0 20px;
 }
-@media (max-width:768px) {
+@media (max-width:320px) {
     .feed {
         margin: 0 10px;
     }

@@ -8,7 +8,7 @@
     height: fit-content;
     padding-bottom: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 320px) {
     .widgets {
         top: 0px;
         position: relative;
